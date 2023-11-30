@@ -14,23 +14,22 @@
     </header>
     <nav class="nav_header">
         <ul class="ul_header">
-            <li class="li_header"><a href="#bio">BIOGRAPHIE</a></li>
-            <li class="li_header"><a href="#proj">PROJET</a></li>
-            <li class="li_header"><a href="#comp">COMPETENCE</a></li>
-            <li class="li_header"><a href="#contact">CONTACT</a></li>
-            <!--lien encre-->
+            <li class="li_header">BIOGRAPHIE</li>
+            <li class="li_header">PROJET</li>
+            <li class="li_header">COMPETENCE</li>
+            <li class="li_header">CONTACT</li>
         </ul>
     </nav>
     <section>
         <!-- créer un tableau pour mes recherches actuel (exemple stage)-->
     </section>
     <section>
-        <h1 id="bio">Biographie</h1>
-        <table>
+        <table class="bio">
+            <h1>Biographie</h1>
             <tr>
                 <td>
-                    <p class="">Je suis actuellement développeur web junior en formation chez <a
-                            href="http://simplon.co/" target="blank">SIMPLON</a>, où j'acquiers des compétences en HTML
+                    <p>Je suis actuellement développeur web junior en formation chez <a href="http://simplon.co/"
+                            target="blank">SIMPLON</a>, où j'acquiers des compétences en HTML
                         5,
                         CSS 3 et JavaScript. Avant cela, j'ai travaillé comme employé commercial, où j'ai développé des
                         compétences
@@ -52,46 +51,46 @@
         </table>
         <!-- Ajouter la descrip dans un tableau + ajout de liens-->
     </section>
-    <section>
-        <h2 id="proj">Projets</h2>
-        <table>
-            <tr>
-                <td>
-                    <p>Je suis en train de travailler sur la création du site web pour l'association dont je
-                        fais
-                        partie.
-                        Il est actuellement en cours de développement..</p>
-                </td>
-            </tr>
-        </table>
-        <!--Présentation des projets-->
-    </section>
-    <section>
-        <table>
-            <h3 id="comp">Compétences</h3>
-            <tr>
-                <td>
-                    <p>HTML 5<br>
-                        CSS 3<br>
-                        JavaScript
-                    </p>
-                </td>
-                <!--Compétance comme HTML 5 / CSS 3 / JavaScript-->
-            </tr>
-        </table>
-    </section>
+    <!--Présentation des projets-->
+    <div class="tabl_proj">
+        <section>
+            <table class="proj">
+                <h2>Projets</h2>
+                <tr>
+                    <td>
+                        <p>Je suis en train de travailler sur la création du site web pour l'association dont je
+                            fais partie.
+                            Il est actuellement en cours de développement..</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <!--Compétance comme HTML 5 / CSS 3 / JavaScript-->
+        <section>
+            <table class="comp">
+                <h3>Compétences</h3>
+                <tr>
+                    <td>
+                        <p class="comp"><img class="html1" src="asset\html1.gif" alt="HTML 5"><br>
+                            <img class="css1" src="asset\css1.gif" alt="CSS 3"><br>
+                            <img class="js1" src="asset\JS1.gif" alt="JavaScript"></p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
     <footer>
+        <h4 class="contact">Contact</h4>
         <nav class="nav_footer">
-            <h4 id="contact" class="contact">Contact</p>
-                <ul class="ul_footer">
-                    <li class="li_footer"><a href="https://github.com/Yoann-SCELLIER" target="_blank"><img
-                                class="github" src="asset\Github.png" alt="Github"></a></li>
-                    <li class="li_footer"><a href="https://www.linkedin.com/in/yoann-scellier-239081295/"
-                            target="_blank"><img class="linkedin" src="asset\Linkedin.png" alt="Linkedin"></a></li>
-                    <li class="li_footer"><a href="mailto:scellier.yoann@gmail.com">
-                            <p class="mail">Email</p>
-                        </a></li>
-                </ul>
+            <ul class="ul_footer">
+                <li class="li_footer"><a href="https://github.com/Yoann-SCELLIER" target="_blank"><img class="github"
+                            src="asset\Git1.gif" alt="Github"></a></li>
+                <li class="li_footer"><a href="https://www.linkedin.com/in/yoann-scellier-239081295/"
+                        target="_blank"><img class="linkedin" src="asset\Lin1.gif" alt="Linkedin"></a></li>
+                <li class="li_footer"><a href="mailto:scellier.yoann@gmail.com">
+                        <img class="mail" src="asset\email.png" alt="email" ></a></p>
+                    </a></li>
+            </ul>
         </nav>
     </footer>
     <script src="main.js"></script>
