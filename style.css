@@ -1,5 +1,11 @@
 /* fond du background */
 
+body {
+    background-image: url("asset\\background1.jpg");
+    background-size: cover;
+    margin: 5rem;
+    padding: 5rem;
+}
 /* logo */
 
 #logo_header {
@@ -10,8 +16,7 @@
 
 .nav_header {
     border-style: solid;
-    border-color: red;
-    background-color: rgb(208, 208, 208);
+    border-color: rgb(183, 0, 255);
     text-align: center;
 }
 
@@ -34,6 +39,7 @@
 }
 
 /* Biographie / Projet / compétence / Contact */
+
 
 h1 {
     font-family: Helvetica, Arial, sans-serif;
@@ -63,6 +69,17 @@ h4 {
     text-decoration: underline;
 }
 
+li {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-style:italic;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 p {
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
@@ -76,11 +93,9 @@ p {
     margin-right: 3rem;
 }
 
-table {}
-
 td {
     border-style: solid;
-    border-color: red;
+    border-color: rgb(183, 0, 255);
 }
 
 .tabl_proj {
@@ -104,6 +119,10 @@ td {
 }
 
 /* Nav footer */
+
+footer {
+align-items: center;
+}
 
 .nav_footer {
     justify-content: center;
