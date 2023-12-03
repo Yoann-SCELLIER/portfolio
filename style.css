@@ -1,5 +1,4 @@
 /* fond du background */
-
 body {
     background-image: url("asset\\background1.jpg");
     background-size: cover;
@@ -8,7 +7,6 @@ body {
 }
 
 /* logo */
-
 #logo_header {
     display: block;
     margin: 0 auto;
@@ -16,14 +14,13 @@ body {
 }
 
 /* barre de nav */
-
 .nav_header {
     text-align: center;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border: 2px solid black;
     position: relative;
     background-color: silver;
+    margin: 20px;
+    padding: 20px;
 
     &::after {
         content: "";
@@ -32,54 +29,36 @@ body {
         left: 5px;
         right: 5px;
         bottom: 5px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: rgb(183, 0, 255);
+        border: 5px solid rgb(183, 0, 255);
     }
 }
 
 .ul_header {
-    display: flex;
     justify-content: center;
     list-style-type: none;
+    display: flex;
     padding: 0;
 }
 
 .li_header {
-    width: 18rem;
+    margin-right: 1rem;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 .li_header a {
     color: black;
     text-align: center;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.bio1, .projet1, .comp1, .contact1 {
+    margin: 1rem;
+
 }
 
 /* Biographie / Projet / compétence / Contact */
-
-
-h1 {
-    font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-h2 {
-    font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-h3 {
-    font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-h4 {
+h1, h2, h3, h4 {
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     font-size: 2rem;
@@ -111,12 +90,9 @@ p {
 }
 
 td {
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border: 2px solid black;
     position: relative;
     background-color: silver;
-
 
     &::after {
         content: "";
@@ -125,9 +101,7 @@ td {
         left: 5px;
         right: 5px;
         bottom: 5px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: rgb(183, 0, 255);
+        border: 5px solid rgb(183, 0, 255);
     }
 }
 
@@ -138,21 +112,11 @@ td {
 }
 
 /* logo compétence */
-
-.html1 {
-    height: 5rem;
-}
-
-.css1 {
-    height: 5rem;
-}
-
-.js1 {
+.html1, .css1, .js1 {
     height: 5rem;
 }
 
 /* Nav footer */
-
 footer {
     align-items: center;
 }
@@ -166,16 +130,16 @@ footer {
     justify-content: center;
     display: flex;
     list-style-type: none;
-    margin: 0px;
-    border: 0px;
-    padding: 0%;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 .li_footer {
     color: black;
     align-items: center;
     display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .github {

@@ -8,101 +8,102 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body class="background_total">
-    <div>
-        <header>
-            <img id="logo_header" src="asset/Y.S-logo.gif" alt="logo"></a>
-        </header>
-        <nav class="nav_header">
-            <ul class="ul_header">
-                <li class="li_header"><a href="#lien_biograph">BIOGRAPHIE</a></li>
-                <li class="li_header"><a href="#lien_proj">PROJET</a></li>
-                <li class="li_header"><a href="#lien_comp">COMPETENCE</a></li>
-                <li class="li_header"><a href="#lien_contact">CONTACT</a></li>
-            </ul>
-        </nav>
+    <header>
+        <img id="logo_header" src="asset/Y.S-logo.gif" alt="logo">
+    </header>
+
+    <nav class="nav_header">
+        <a href="#lien_biograph" class="bio1">BIOGRAPHIE</a>
+        <a href="#lien_proj" class="projet1">PROJET</a>
+        <a href="#lien_comp" class="comp1">COMPETENCE</a>
+        <a href="#lien_contact" class="contact1">CONTACT</a>
+    </nav>
+
+    <section>
+        <!-- Créer un tableau pour mes recherches actuelles (exemple stage) -->
+    </section>
+
+    <section>
+        <h1 id="lien_biograph">Biographie</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>Je suis actuellement développeur web junior en formation chez <a href="http://simplon.co/"
+                            target="_blank">SIMPLON</a>, où j'acquiers des compétences en HTML 5, CSS 3 et
+                        JavaScript. Avant cela, j'ai travaillé comme employé commercial, où j'ai développé des compétences
+                        comme
+                        la gestion de stock, la relation client, de renseignements techniques et le travail
+                        d'équipe.<br>
+                        Je suis passionné par tout ce qui concerne l'évolution de l'informatique, les jeux vidéo et
+                        la technologie.<br>
+                        Je suis également président d'une association à but non lucratif sous la loi 1901,
+                        spécialisée dans le domaine des jeux vidéo et axée sur la pratique de l'e-sport.<br>
+                        En dehors de mon travail, je suis également musicien, une passion que je cultive pendant mon
+                        temps libre.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <!-- Ajouter la description dans un tableau + ajout de liens -->
+    </section>
+
+    <div class="tabl_proj">
         <section>
-            <!-- créer un tableau pour mes recherches actuel (exemple stage)-->
-        </section>
-        <section>
-            <h1 id="lien_biograph">Biographie</h1>
-            <table class="bio">
+            <h2 id="lien_proj">Projets</h2>
+            <table>
                 <tr>
                     <td>
-                        <p>Je suis actuellement développeur web junior en formation chez <a href="http://simplon.co/"
-                                target="blank">SIMPLON</a>, où j'acquiers des compétences en HTML 5, CSS 3 et
-                            JavaScript.
-                            Avant cela, j'ai travaillé comme employé commercial, où j'ai développé des compétences comme
-                            la gestion de stock, la relation client, de renseignements techniques et le travail
-                            d'équipe.<br>
-                            Je suis passionné par tout ce qui concerne l'évolution de l'informatique, les jeux vidéo et
-                            la technologie.<br>
-                            Je suis également président d'une association à but non lucratif sous la loi 1901,
-                            spécialisée dans le domaine des jeux vidéo et axée sur la pratique de l'e-sport.<br>
-                            En dehors de mon travail, je suis également musicien, une passion que je cultive pendant mon
-                            temps libre.
+                        <p>Je suis en train de travailler sur la création du site web pour l'association dont je
+                            fais partie.
+                            Il est actuellement en cours de développement..</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h3 id="lien_comp">Compétences</h3>
+            <table class="comp">
+                <tr>
+                    <td>
+                        <p class="comp">
+                            <img class="html1" src="asset\html1.gif" alt="HTML 5"><br>
+                            <img class="css1" src="asset\css1.gif" alt="CSS 3"><br>
+                            <img class="js1" src="asset\JS1.gif" alt="JavaScript">
                         </p>
                     </td>
                 </tr>
             </table>
-            <!-- Ajouter la descrip dans un tableau + ajout de liens-->
         </section>
-        <!--Présentation des projets-->
-        <div class="tabl_proj">
-            <section>
-                <h2 id="lien_proj">Projets</h2>
-                <table class="proj">
-                    <tr>
-                        <td>
-                            <p>Je suis en train de travailler sur la création du site web pour l'association dont je
-                                fais partie.
-                                Il est actuellement en cours de développement..</p>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-            <!--Compétance comme HTML 5 / CSS 3 / JavaScript-->
-            <section>
-                <h3 id="lien_comp">Compétences</h3>
-                <table class="comp">
-                    <tr>
-                        <td>
-                            <p class="comp"><img class="html1" src="asset\html1.gif" alt="HTML 5"><br>
-                                <img class="css1" src="asset\css1.gif" alt="CSS 3"><br>
-                                <img class="js1" src="asset\JS1.gif" alt="JavaScript">
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-        </div>
-        <footer>
-            <h4 id="lien_contact" class="contact">Contact</h4>
-            <nav class="nav_footer">
-                <ul class="ul_footer">
-                    <li class="li_footer"><a href="https://github.com/Yoann-SCELLIER" target="_blank"><img
-                                class="github" src="asset\Git1.gif" alt="Github"></a></li>
-                    <li class="li_footer"><a href="https://www.linkedin.com/in/yoann-scellier-239081295/"
-                            target="_blank"><img class="linkedin" src="asset\Lin1.gif" alt="Linkedin"></a></li>
-                    <li class="li_footer">
-                        <div class="mail">
-                            <form action="mailto:scellier.yoann@gmail.com" method="post" enctype="text/plain">
-                                <label for="nom">Nom :</label>
-                                <input type="text" id="nom" name="nom" required><br><br>
-                                <label for="email">Email :</label>
-                                <input type="email" id="email" name="email" required><br><br>
-                                <label for="message">Message :</label><br>
-                                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-                                <input type="submit" value="Envoyer">
-                            </form>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-        <script src="main.js"></script>
     </div>
+
+    <footer>
+        <h4 id="lien_contact" class="contact">Contact</h4>
+        <nav class="nav_footer">
+            <ul class="ul_footer">
+                <li class="li_footer"><a href="https://github.com/Yoann-SCELLIER" target="_blank"><img
+                            class="github" src="asset\Git1.gif" alt="Github"></a></li>
+                <li class="li_footer"><a href="https://www.linkedin.com/in/yoann-scellier-239081295/"
+                        target="_blank"><img class="linkedin" src="asset\Lin1.gif" alt="Linkedin"></a></li>
+                <li class="li_footer">
+                    <div class="mail">
+                        <form action="mailto:scellier.yoann@gmail.com" method="post" enctype="text/plain">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom" required><br><br>
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" required><br><br>
+                            <label for="message">Message :</label><br>
+                            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                            <input type="submit" value="Envoyer">
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
