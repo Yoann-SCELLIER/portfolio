@@ -25,7 +25,6 @@ body {
     position: relative;
     background-color: silver;
 
-
     &::after {
         content: "";
         position: absolute;
@@ -39,23 +38,21 @@ body {
     }
 }
 
-
 .ul_header {
-    list-style-type: none;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 50px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.li_header {
+    width: 18rem;
 }
 
 .li_header a {
     color: black;
     text-align: center;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-}
-
-.li_header {
-    width: 18rem;
 }
 
 /* Biographie / Projet / compétence / Contact */
