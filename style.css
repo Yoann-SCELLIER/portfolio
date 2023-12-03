@@ -6,19 +6,39 @@ body {
     margin: 5rem;
     padding: 5rem;
 }
+
 /* logo */
 
 #logo_header {
-    float: center;
+    display: block;
+    margin: 0 auto;
+    height: 12rem;
 }
 
 /* barre de nav */
 
 .nav_header {
-    border-style: solid;
-    border-color: rgb(183, 0, 255);
     text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: relative;
+    background-color: silver;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(183, 0, 255);
+    }
 }
+
 
 .ul_header {
     list-style-type: none;
@@ -72,7 +92,7 @@ h4 {
 li {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
-    font-style:italic;
+    font-style: italic;
 }
 
 a {
@@ -95,7 +115,23 @@ p {
 
 td {
     border-style: solid;
-    border-color: rgb(183, 0, 255);
+    border-width: 2px;
+    border-color: black;
+    position: relative;
+    background-color: silver;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(183, 0, 255);
+    }
 }
 
 .tabl_proj {
@@ -121,12 +157,11 @@ td {
 /* Nav footer */
 
 footer {
-align-items: center;
+    align-items: center;
 }
 
 .nav_footer {
     justify-content: center;
-
 }
 
 .ul_footer {
@@ -155,10 +190,9 @@ align-items: center;
 .linkedin {
     height: 1rem;
     margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 2em;
 }
 
 .mail {
-    height: 2rem;
-    margin-left: 2rem;
+    text-align: center;
 }

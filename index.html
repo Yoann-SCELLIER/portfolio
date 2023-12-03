@@ -12,11 +12,11 @@
 <body class="background_total">
     <div>
         <header>
-            <img id="logo_header" src="" alt="logo"></a>
+            <img id="logo_header" src="asset/Y.S-logo.gif" alt="logo"></a>
         </header>
         <nav class="nav_header">
             <ul class="ul_header">
-                <li class="li_header">BIOGRAPHIE</li>
+                <li class="li_header"><a href="#biograph">BIOGRAPHIE</a></li>
                 <li class="li_header">PROJET</li>
                 <li class="li_header">COMPETENCE</li>
                 <li class="li_header">CONTACT</li>
@@ -26,8 +26,8 @@
             <!-- créer un tableau pour mes recherches actuel (exemple stage)-->
         </section>
         <section>
+            <h1 id="biograph">Biographie</h1>
             <table class="bio">
-                <h1>Biographie</h1>
                 <tr>
                     <td>
                         <p>Je suis actuellement développeur web junior en formation chez <a href="http://simplon.co/"
@@ -59,8 +59,8 @@
         <!--Présentation des projets-->
         <div class="tabl_proj">
             <section>
+                <h2>Projets</h2>
                 <table class="proj">
-                    <h2>Projets</h2>
                     <tr>
                         <td>
                             <p>Je suis en train de travailler sur la création du site web pour l'association dont je
@@ -72,8 +72,8 @@
             </section>
             <!--Compétance comme HTML 5 / CSS 3 / JavaScript-->
             <section>
+                <h3>Compétences</h3>
                 <table class="comp">
-                    <h3>Compétences</h3>
                     <tr>
                         <td>
                             <p class="comp"><img class="html1" src="asset\html1.gif" alt="HTML 5"><br>
@@ -93,9 +93,19 @@
                                 class="github" src="asset\Git1.gif" alt="Github"></a></li>
                     <li class="li_footer"><a href="https://www.linkedin.com/in/yoann-scellier-239081295/"
                             target="_blank"><img class="linkedin" src="asset\Lin1.gif" alt="Linkedin"></a></li>
-                    <li class="li_footer"><a href="mailto:scellier.yoann@gmail.com">
-                            <img class="mail" src="asset\email.png" alt="email"></a></p>
-                        </a></li>
+                    <li class="li_footer">
+                        <div class="mail">
+                            <form action="mailto:scellier.yoann@gmail.com" method="post" enctype="text/plain">
+                                <label for="nom">Nom :</label>
+                                <input type="text" id="nom" name="nom" required><br><br>
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                                <label for="message">Message :</label><br>
+                                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                                <input type="submit" value="Envoyer">
+                            </form>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </footer>
